@@ -1,0 +1,6 @@
+services:
+  tserver:
+    build: .
+    ports:
+      - "8884:8884"
+    restart: unless-stopped

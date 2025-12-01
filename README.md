@@ -1,3 +1,7 @@
+# Credits
+
+This project is based on https://github.com/hertzg/tesseract-server/
+
 # Prerequisites
 
 In order to run this application you need to install:

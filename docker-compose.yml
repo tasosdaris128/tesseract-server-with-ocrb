@@ -1,6 +1,19 @@
 services:
   tserver:
-    build: .
+    build: ./tserver
     ports:
       - "8884:8884"
     restart: unless-stopped
+    networks:
+      - tservernetwork
+  proxy:
+    build: ./proxy
+    ports:
+      - "5000:5000"
+    restart: unless-stopped
+    networks:
+      - tservernetwork
+
+networks:
+  tservernetwork:
+    driver: bridge

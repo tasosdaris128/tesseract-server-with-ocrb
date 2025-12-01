@@ -14,16 +14,28 @@ make // If your system has not preinstalled
 
 # Operate
 
-In order to startup the server, just run:
+## Run
 
 ```
 make
 ```
 
-In order to stop the server, just run:
+## Clean
 
 ```
 make clean
+```
+
+## Pause
+
+```
+make close
+```
+
+## Read logs
+
+```
+make logs
 ```
 
 # Request for OCR
